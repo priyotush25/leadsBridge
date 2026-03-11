@@ -91,9 +91,9 @@ body {
     text-decoration: none;
     background-color: #FFA500;
     color: white;
-    padding: 12px 28px;
+    padding: 12px 24px;
     border-radius: 50px;
-    font-weight: bold;
+    font-weight: medium;
     font-size: 12px;
     /* border: 2px solid #000; */
     /* This creates the black offset shadow seen in the image */
@@ -103,4 +103,90 @@ body {
 
 }
 
+
+
+/* Hero Section Base */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    /* Gradient: Orange tint at bottom to white at top */
+    background: linear-gradient(to top, #FFA5001A 0%, #FFFFFF 100%);
+    padding-top: 80px;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 1000px;
+    z-index: 10;
+}
+
+/* Hero Badge */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.badge-icon {
+    color: white;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.hero-badge span { color: #FFA500; }
+
+/* Hero Title */
+.hero-title {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+.highlight { color: #FFA500; }
+
+/* Floating Images */
+.floating-img {
+    position: absolute;
+    z-index: -1;
+    animation: floatAnim 5s ease-in-out infinite;
+}
+
+.income-img {
+    width: 260px;
+    left: -220px;
+    top: 40%;
+    transform: rotate(-10deg);
+}
+
+.users-img {
+    width: 220px;
+    right: -180px;
+    top: 45%;
+    transform: rotate(8deg);
+    animation-delay: 1.5s;
+}
+
+@keyframes floatAnim {
+    0%, 100% { transform: translateY(0) rotate(-10deg); }
+    50% { transform: translateY(-20px) rotate(-8deg); }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 1024px) {
+    .floating-img { display: none; }
+    .hero-title { font-size: 42px; }
+}
 
