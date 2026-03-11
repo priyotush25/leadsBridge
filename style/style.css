@@ -818,3 +818,97 @@ body {
         display: none;
     }
 }
+/* ===================== */
+/* Solution Section Base */
+.solution-section {
+    padding: 100px 20px;
+    background-color: #121212; /* Dark Theme */
+    text-align: center;
+    color: #ffffff;
+}
+
+.solution-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Badge Adjustment for Dark Theme */
+
+
+.dark-badge p { color: #fff; }
+
+.solution-title {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.solution-subtitle {
+    color: #bbbbbb;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+/* Solution Grid */
+.solution-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* Solution Cards */
+.solution-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.solution-card:hover {
+    border-color: #FFA500;
+    transform: translateY(-5px);
+    background: #222;
+}
+
+.solution-q {
+    font-size: 18px;
+    color: #FFA500;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Solution Vertical Accent */
+.solution-accent {
+    width: 2px;
+    height: 35px;
+    background-color: #FFA50033; /* Faded orange */
+    margin-bottom: 15px;
+}
+
+.solution-text {
+    font-size: 15px;
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+    .solution-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .solution-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .solution-title {
+        font-size: 36px;
+    }
+}
