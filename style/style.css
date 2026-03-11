@@ -338,3 +338,123 @@ body {
         font-size: 16px;
     }
 }
+
+
+/* Why Choose Us Section */
+.why-choose-section {
+    background-color: #1a1a1a; /* Dark Background */
+    padding: 100px 20px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.why-choose-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+/* Left Side */
+.why-content {
+    flex: 1;
+    text-align: left;
+}
+
+.dark-badge {
+    border: none !important;
+}
+
+.dark-badge p { color: #fff !important; }
+
+.why-title {
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.why-description {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+/* Right Side - Graphic */
+.why-graphic {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-circle {
+    width: 350px;
+    height: 350px;
+    border: 3px solid #FFA500;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #2a2a2a 0%, #1a1a1a 100%);
+    box-shadow: 0 0 50px rgba(255, 165, 0, 0.1);
+}
+
+.main-circle img{
+  width: 280px;
+  height: 280px;
+}
+
+/* Feature Tags */
+.feature-tags {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tag {
+    background: #262626;
+    padding: 15px 25px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    cursor: default;
+}
+
+.tag:hover {
+    border-color: #FFA500;
+    transform: translateX(-10px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .why-choose-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .why-content { text-align: center; }
+    
+    .why-graphic {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .feature-tags {
+        position: relative;
+        right: auto;
+        margin-top: 30px;
+    }
+    
+    .why-title { font-size: 36px; }
+}
