@@ -707,3 +707,114 @@ body {
         padding-top: 20px;
     }
 }
+
+/* ========================= */
+/* Reality Section */
+.reality-section {
+    padding: 100px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.reality-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+.reality-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+.reality-badge p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.reality-badge p span { color: #FFA500; }
+
+.reality-title {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.reality-subtitle {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+/* Grid Layout */
+.reality-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* Reality Cards */
+.reality-card {
+    background: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.reality-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transform: translateY(-5px);
+}
+
+.card-q {
+    font-size: 18px;
+    color: #FFA500;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Vertical Accent Line */
+.accent-line {
+    width: 2px;
+    height: 35px;
+    background-color: #FFE5CC;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .reality-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .reality-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reality-title {
+        font-size: 32px;
+    }
+
+    .reality-subtitle br {
+        display: none;
+    }
+}
