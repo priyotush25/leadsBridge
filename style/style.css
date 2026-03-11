@@ -190,3 +190,73 @@ body {
     .hero-title { font-size: 42px; }
 }
 
+
+/* Statistics Section */
+.stats-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stats-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+.stat-card {
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 16px;
+    padding: 40px 20px;
+    flex: 1;
+    min-width: 250px; /* Ensures cards don't get too narrow */
+    max-width: 280px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h3 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .stats-title {
+        font-size: 22px;
+    }
+    
+    .stat-card {
+        max-width: 100%; /* Cards take full width on mobile */
+        padding: 30px 20px;
+    }
+}
